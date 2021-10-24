@@ -1,0 +1,49 @@
+:root {
+  --primary: #f92d02ff;
+  --secondary: #d7ffabff;
+  --tertiary: #fcff6cff;
+  --fourth: #d89d6aff;
+  --fifth: #6d454cff;
+}
+
+* {
+  font-family: Sans-Serif;
+ }
+
+html,
+body {
+  margin: 0;
+}
+
+#banner-content {
+  margin: 0;
+}
+
+#banner {
+  background-color: var(--primary);
+  padding: 15px;
+  color: white;
+}
+
+.icon {
+  height: 32px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movie {
+  padding: 2em 1em 0em 1em;
+  width: 300px;
+}
+
+.poster {
+  border-radius: 25px;
+}
+
+.poster:hover {
+  cursor: pointer;
+}

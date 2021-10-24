@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./assets/icon/favicon.ico">
+  <title>Fresh Tomatoes</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div id="banner">
+    <h1 id="banner-content">FRESH TOMATOES</h1>
+  </div>
+
+  <div class="flex-container">
+    <div class="movie" id="movie0">
+      <img class="poster" id="poster0" src="" alt="">
+      <p class="score"><img class="icon" src="https://www.rottentomatoes.com/assets/pizza-pie/images/favicon.ico" alt="">
+        <span class="rating" id="rating0"></span></p>
+      <h2><span class="title" id="title0"></span></h2>
+      <h4><span class="year" id="year0"></span></h4>
+      <p><span class="plot" id="plot0"></span></p>
+    </div>
+  
+    <div class="movie" id="movie1">
+      <img class="poster" id="poster1" src="" alt="">
+      <p class="score"><img class="icon" src="https://www.rottentomatoes.com/assets/pizza-pie/images/favicon.ico" alt="" height="24">
+        <span class="rating" id="rating1"></span></p>
+      <h2><span class="title" id="title1"></span></h2>
+      <h4><span class="year" id="year1"></span></h4>
+      <p><span class="plot" id="plot1"></span></p>
+    </div>
+  
+    <div class="movie" id="movie2">
+      <img class="poster" id="poster2" src="" alt="">
+      <p class="score"><img class="icon" src="https://www.rottentomatoes.com/assets/pizza-pie/images/favicon.ico" alt="" height="24">
+        <span class="rating" id="rating2"></span></p>
+      <h2><span class="title" id="title2"></span></h2>
+      <h4><span class="year" id="year2"></span></h4>
+      <p><span class="plot" id="plot2"></span></p>
+    </div>
+    
+    <div class="movie" id="movie3">
+      <img class="poster" id="poster3" src="" alt="">
+      <p class="score"><img class="icon" src="https://www.rottentomatoes.com/assets/pizza-pie/images/favicon.ico" alt="" height="24">
+        <span class="rating" id="rating3"></span></p>
+      <h2><span class="title" id="title3"></span></h2>
+      <h4><span class="year" id="year3"></span></h4>
+      <p><span class="plot" id="plot3"></span></p>
+    </div>
+    
+    <div class="movie" id="movie4">
+      <img class="poster" id="poster4" src="" alt="">
+      <p class="score"><img class="icon" src="https://www.rottentomatoes.com/assets/pizza-pie/images/favicon.ico" alt="" height="24">
+        <span class="rating" id="rating4"></span></p>
+      <h2><span class="title" id="title4"></span></h2>
+      <h4><span class="year" id="year4"></span></h4>
+      <p><span class="plot" id="plot4"></span></p>
+    </div>
+    
+    <div class="movie" id="movie5">
+      <img class="poster" id="poster5" src="" alt="">
+      <p class="score"><img class="icon" src="https://www.rottentomatoes.com/assets/pizza-pie/images/favicon.ico" alt="" height="24">
+        <span class="rating" id="rating5"></span></p>
+      <h2><span class="title" id="title5"></span></h2>
+      <h4><span class="year" id="year5"></span></h4>
+      <p><span class="plot" id="plot5"></span></p>
+    </div>
+    
+    <div class="movie" id="movie6">
+      <img class="poster" id="poster6" src="" alt="">
+      <p class="score"><img class="icon" src="https://www.rottentomatoes.com/assets/pizza-pie/images/favicon.ico" alt="" height="24">
+        <span class="rating" id="rating6"></span></p>
+      <h2><span class="title" id="title6"></span></h2>
+      <h4><span class="year" id="year6"></span></h4>
+      <p><span class="plot" id="plot6"></span></p>
+    </div>
+    
+    <div class="movie" id="movie7">
+      <img class="poster" id="poster7" src="" alt="">
+      <p class="score"><img class="icon" src="https://www.rottentomatoes.com/assets/pizza-pie/images/favicon.ico" alt="" height="24">
+        <span class="rating" id="rating7"></span></p>
+      <h2><span class="title" id="title7"></span></h2>
+      <h4><span class="year" id="year7"></span></h4>
+      <p><span class="plot" id="plot7"></span></p>
+    </div>
+    
+    <div class="movie" id="movie8">
+      <img class="poster" id="poster8" src="" alt="">
+      <p class="score"><img class="icon" src="https://www.rottentomatoes.com/assets/pizza-pie/images/favicon.ico" alt="" height="24">
+        <span class="rating" id="rating8"></span></p>
+      <h2><span class="title" id="title8"></span></h2>
+      <h4><span class="year" id="year8"></span></h4>
+      <p><span class="plot" id="plot8"></span></p>
+    </div>
+    
+    <div class="movie" id="movie9">
+      <img class="poster" id="poster9" src="" alt="">
+      <p class="score"><img class="icon" src="https://www.rottentomatoes.com/assets/pizza-pie/images/favicon.ico" alt="" height="24">
+        <span class="rating" id="rating9"></span></p>
+      <h2><span class="title" id="title9"></span></h2>
+      <h4><span class="year" id="year9"></span></h4>
+      <p><span class="plot" id="plot9"></span></p>
+    </div>
+  </div>
+  
+  <script>
+    for (let i=0; i<10; i++){
+      fillElements(i);
+    }
+
+    
+
+    $(document).ready(function(){
+      // $(".plot").hide();
+
+      // Focus on one movie only
+      $(".poster").click(function(){
+        $(this).parent().siblings().toggle(1000);
+        $(this).siblings().not(":last").toggle(1000);
+        // $(this).siblings().last().toggle(1000);
+      });
+      // Pengennya deskripsi stay hidden baru muncul waktu klik poster, tp ga bisa :(
+    });
+  </script>
+  
+</body>
+</html>
