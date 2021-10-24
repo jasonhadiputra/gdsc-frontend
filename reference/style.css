@@ -1,0 +1,36 @@
+/* * {
+  
+} */
+
+.title-red {
+  color: #d61919;
+}
+.title-blue {
+  color: rgb(15, 172, 235);
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  /* vertically */
+  justify-content: center;
+  align-items: center;
+  /* buat div nya seluruh layar, % vertical height */
+  min-height: 50vh;
+}
+
+button {
+  background-color: aliceblue;
+  border: 2px solid salmon;
+  padding: 1em;
+  margin: 1em;
+}
+
+button:hover {
+  background-color: skyblue;
+}
+
+img {
+  margin: 1em 0 1em 0;
+}
+
